@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="App1.MainPage"
+
+    Title="ImageButton Demo">
+ 
+
+
+        <StackLayout BackgroundColor="White">
+       
+        <StackLayout   Margin="20" Orientation="Horizontal"  HorizontalOptions="FillAndExpand" VerticalOptions="Start" >
+            <Label  TextColor="Black" x:Name="name"  Text="25/4/2022  10:22pm" FontSize="20" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+            <Label  TextColor="black" x:Name="date  " Text="Sama Khraim" FontSize="20" HorizontalOptions="End" VerticalOptions="Center" />
+    </StackLayout>
+
+
+        <StackLayout Margin="10" Orientation="Horizontal"  HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+
+
+            <Button Clicked="zajel_Clicked" x:Name="zajel" Text="Zajel" BackgroundColor="LightYellow" TextColor="black" FontSize="20"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+
+            <Button Clicked="google_Clicked" x:Name="google" BackgroundColor="LightCoral" TextColor="black" FontSize="20" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Text="google" />
+
+        </StackLayout>
+        <WebView x:Name="Browser"  VerticalOptions="FillAndExpand" HeightRequest="500"/>
+
+
+
+    </StackLayout>
+
+</ContentPage>
